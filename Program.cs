@@ -19,12 +19,12 @@ namespace LuckyTicket
                 var check = Int32.TryParse(number, out numberForCheck);
                 if(number.Length > 8 || number.Length < 4)
                 {
-                   Console.WriteLine("Pleas input only numbers more than 999 and less 100,000,000. Try again");
+                   Console.WriteLine("Please input only numbers more than 999 and less 100,000,000. Try again");
                     goto Num; 
                 }
                 if (!check)
                 {
-                    Console.WriteLine("Pleas input only numbers. Try again");
+                    Console.WriteLine("Please input only numbers. Try again");
                     goto Repeat;
                 }
                 bool result = IsLucky(numberForCheck);
