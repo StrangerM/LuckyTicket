@@ -17,7 +17,7 @@ namespace LuckyTicket
             Num:
                 string number = Console.ReadLine().Trim();
                 var check = Int32.TryParse(number, out numberForCheck);
-                if(number.Length > 8 || number.Length < 4)
+                if(number.Length > 8 || number.Length < 4 || numberForCheck == 0)
                 {
                    Console.WriteLine("Please input only numbers more than 999 and less 100,000,000. Try again");
                     goto Num; 
